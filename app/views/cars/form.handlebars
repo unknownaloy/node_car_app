@@ -1,0 +1,17 @@
+{{#if car}}
+<form method="post" action="/cars/{{car.id}}">
+{{else}}
+<form method="post" action="/cars">
+{{/if}}
+  <div>
+    Make:
+    <input type="text" name="car_make" value="{{car.make}}" />
+  </div>
+  <div>
+    Model:
+    <input type="text" name="car_model" value="{{car.model}}" />
+  </div>
+  <div>
+    <button type="submit">Save</button>
+  </div>
+</form>
